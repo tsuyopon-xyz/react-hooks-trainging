@@ -19,6 +19,8 @@ function TimerFunctionalComponent(props) {
     };
   }, []);
 
+  // console.log(timerCount, '@@@@@@@');
+
   return (
     <div
       className={`Timer ${props.className}`}
