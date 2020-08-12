@@ -1,0 +1,21 @@
+.Button {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.Button:hover {
+  background-color: #de0000;
+}
+
+.Button:active {
+  background-color: #a30000;
+}
