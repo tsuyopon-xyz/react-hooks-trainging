@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { AuthContext } from '../../../contexts/AuthContext';
+import React, { useState, useEffect } from 'react'
 import './Timer.css';
 
 function TimerFunctionalComponent(props) {
   const [timerCount, setTimerCount] = useState(0);
-  const { user, isAuthenticated } = useContext(AuthContext);
 
   useEffect(() => {
     console.log('Mounted or Updated in FC!!!');
@@ -29,7 +27,6 @@ function TimerFunctionalComponent(props) {
     >
       <h3 className="Timer-title">FCタイマー</h3>
       <div className="Timer-count">{timerCount}</div>
-      {isAuthenticated ? <p>{user.name}</p> : null}
     </div>
   )
 }
