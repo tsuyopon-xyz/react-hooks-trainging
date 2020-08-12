@@ -1,6 +1,6 @@
 import React from 'react';
-import CCButton from './components/Button/ClassComponent';
-import FCButton from './components/Button/FunctionalComponent';
+import CCButton from './components/use-state-examples/Button/ClassComponent';
+import FCButton from './components/use-state-examples/Button/FunctionalComponent';
 
 function App() {
   return (
