@@ -8,6 +8,9 @@ import FCButton from './components/use-state-examples/Button/FunctionalComponent
 import CCTimer from './components/use-effect-examples/Timer/ClassComponent';
 import FCTimer from './components/use-effect-examples/Timer/FunctionalComponent';
 
+// useContext動作確認用
+import Profile from './components/use-context-examples/Profile/Profile';
+
 function App() {
   const [isVisibleCCTimer, setVisibleCCTimer] = useState(true);
   const [isVisibleFCTimer, setVisibleFCTimer] = useState(true);
@@ -45,6 +48,14 @@ function App() {
         { isVisibleCCTimer ? renderTimerIfVisible(true) : null }
         { isVisibleFCTimer ? renderTimerIfVisible(false) : null }
       </div>
+
+      <hr/>
+
+      <div>
+        <h2>useContextの動作確認</h2>
+        <Profile />
+      </div>
+
     </div>
   );
 }
